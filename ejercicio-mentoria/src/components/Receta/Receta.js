@@ -12,9 +12,9 @@ export function Receta(props){
                 <h1>{props.title}</h1>
                 <p>Dificultad: {props.difficulty}</p>
                 <p>Tiempo: {props.timeCoock}</p>
-               </div>
+               
             
-            <div className="receta-explicacion">
+          
             <div className="receta-ingredientes">
                 <ol>
                     <li>Ingredientes: {props.ingredients} </li>
