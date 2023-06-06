@@ -1,34 +1,30 @@
 import './Receta.css';
 
-export function Receta(){
+export function Receta(props){
 
     return(
         <div className="receta">
             <div className="receta-cabecera">
               <div className="receta-imagen">
-               <img src="https://cdn.pixabay.com/photo/2017/02/15/15/17/meal-2069021_1280.jpg"/>
+               <img src={props.image} alt="Imagen de la receta"/>
               </div>
               <div className="receta-texto">
-                <h1>Receta Lasaña</h1>
-                <p>Preparación: 1 hora</p>
-                <p>Dificultad: medio</p>
+                <h1>{props.title}</h1>
+                <p>{props.difficulty}</p>
+                <p>{props.timeCoock}</p>
                </div>
             </div>
             
             <div className="receta-ingredientes">
                 <ol>
-                    <li>Carne picada</li>
-                    <li>Tomate</li>
-                    <li>Pasta</li>
-                    <li>Verduras</li>
+                    <li>{props.ingredients}: </li>
+                    
                 </ol>
             </div>
 
             <div className="receta-pasos">
                 <ol>
-                  <li>Cocinar la verdura</li>
-                  <li>Añadir la carne</li>
-                  <li>Agregar el tomate y acabar de cocinar</li>
+                <li>{props.steps}: </li>
                 </ol>
             </div>
             
