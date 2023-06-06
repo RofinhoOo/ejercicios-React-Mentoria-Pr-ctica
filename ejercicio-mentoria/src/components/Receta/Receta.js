@@ -10,11 +10,11 @@ export function Receta(props){
               </div>
               <div className="receta-texto">
                 <h1>{props.title}</h1>
-                <p>{props.difficulty}</p>
-                <p>{props.timeCoock}</p>
+                <p>Dificultad: {props.difficulty}</p>
+                <p>Tiempo: {props.timeCoock}</p>
                </div>
-            </div>
             
+            <div className="receta-explicacion">
             <div className="receta-ingredientes">
                 <ol>
                     <li>{props.ingredients}: </li>
@@ -24,8 +24,10 @@ export function Receta(props){
 
             <div className="receta-pasos">
                 <ol>
-                <li>{props.steps}: </li>
+                <li>{props.steps} </li>
                 </ol>
+            </div>
+            </div>
             </div>
             
 

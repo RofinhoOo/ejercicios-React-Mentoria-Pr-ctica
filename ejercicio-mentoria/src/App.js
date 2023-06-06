@@ -1,5 +1,5 @@
 
-// App.js
+
 import './App.css';
 import { Receta } from './components/Receta/Receta';
 import { recetas } from './data/recetas';

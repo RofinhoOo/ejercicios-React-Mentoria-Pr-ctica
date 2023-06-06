@@ -1,7 +1,61 @@
-
-.receta-cabecera{
-
+.receta {
+    background-color: #fff;
+    
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .receta-cabecera {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .receta-imagen img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .receta-texto {
+    text-align: center;
+    padding: 40px;
+    font-size: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    
+  }
+  
+  .receta-texto h1 {
+    
+    font-size: 1.3rem;
+    
+   
+    
+  }
+  
+  .receta-texto p {
+    font-size: 1.1rem;
+    text-align: justify;
+   
+  }
+
+  .receta-ingredientes{
+
+    margin-bottom: 10px;
     
 
-}
+  }
+
+  .rectea-pasos{
+
+    margin-bottom: 10px;
+
+
+  }
+  
+  
