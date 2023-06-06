@@ -17,14 +17,14 @@ export function Receta(props){
             <div className="receta-explicacion">
             <div className="receta-ingredientes">
                 <ol>
-                    <li>{props.ingredients}: </li>
+                    <li>Ingredientes: {props.ingredients} </li>
                     
                 </ol>
             </div>
 
             <div className="receta-pasos">
                 <ol>
-                <li>{props.steps} </li>
+                <li>Pasos: {props.steps} </li>
                 </ol>
             </div>
             </div>
