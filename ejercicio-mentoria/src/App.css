@@ -2,4 +2,17 @@
 
   margin: 0;
   padding: 0;
+  background-color: rgb(68, 239, 239);
+}
+
+.App h1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: aliceblue;
+  font-size: 4rem;
+  
 }

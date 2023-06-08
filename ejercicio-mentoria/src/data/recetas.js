@@ -52,7 +52,7 @@
     },
 
     { ID: 3,
-      image: "https://cdn.pixabay.com/photo/2017/02/15/15/17/meal-2069021_640.jpg",
+      image: "https://cdn.pixabay.com/photo/2021/05/29/20/21/lasagna-6294213_640.jpg",
       title: "Receta Lasaña",
       timeCoock: "1 hora",
       difficulty: "Media",

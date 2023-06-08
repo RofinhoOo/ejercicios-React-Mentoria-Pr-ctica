@@ -16,6 +16,7 @@ function App() {
         timeCoock={recetas[0].timeCoock}
         ingredients={recetas[0].ingredients}
         steps={recetas[0].steps}
+     
       />
 
       <Receta
