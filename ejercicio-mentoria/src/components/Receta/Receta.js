@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Receta.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+
+
+
 
 export function Receta({ image, title, difficulty, timeCoock, ingredients, steps }) {
+
+  const [isFavorite, setIsFavorite] = useState(true);
+
+  
+
   return (
     <div className="receta">
       <div className="receta-cabecera">
-        <div className="receta-imagen">
+        {isFavorite ? <FontAwesomeIcon  icon={faHeart} border/> : <FontAwesomeIcon icon={faHeart} />}
+       <div className="receta-imagen">
           <img src={image} alt="Imagen de la receta" />
         </div>
         <div className="receta-texto">

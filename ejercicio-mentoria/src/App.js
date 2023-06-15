@@ -10,7 +10,10 @@ function App() {
       <h1>Recetas gastronómicas</h1>
       {recetas.map((receta)=>{
         return(
-        <Receta key={receta.ID}
+        
+        <Receta 
+        
+        key={receta.ID}
         ID={receta.ID}
         image={receta.image}
         title={receta.title}
