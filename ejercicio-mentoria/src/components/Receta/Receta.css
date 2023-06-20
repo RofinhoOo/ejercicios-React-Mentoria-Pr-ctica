@@ -108,3 +108,7 @@
   align-items: center;
   margin-top: 30px;
 }
+
+.favorite-icon{
+  color: red;
+}

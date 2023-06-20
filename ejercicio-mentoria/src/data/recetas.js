@@ -29,7 +29,7 @@
       image: "https://cdn.pixabay.com/photo/2017/03/19/14/59/italian-salad-2156720_640.jpg",
       title: "Ensalada César",
       timeCoock: "20 minutos",
-      ddifficulty: "Fácil",
+      difficulty: "Fácil",
       ingredients: [
         "200g de lechuga romana",
         "50g de queso parmesano rallado",

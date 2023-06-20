@@ -1,22 +1,27 @@
-import React, { useState } from 'react';
+
 import './Receta.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
+import React, { useState } from 'react';
 
 
 
 
 export function Receta({ image, title, difficulty, timeCoock, ingredients, steps }) {
-
   const [isFavorite, setIsFavorite] = useState(true);
 
-  
+  const handleFavoriteClick = () => {
+    setIsFavorite(!isFavorite);
+  }
 
   return (
     <div className="receta">
       <div className="receta-cabecera">
-        {isFavorite ? <FontAwesomeIcon  icon={faHeart} border/> : <FontAwesomeIcon icon={faHeart} />}
-       <div className="receta-imagen">
+        {isFavorite ? 
+          <AiFillHeart  onClick={handleFavoriteClick} style={{color: 'red'}} />
+        : 
+        <AiOutlineHeart onClick={handleFavoriteClick} />
+        }
+        <div className="receta-imagen">
           <img src={image} alt="Imagen de la receta" />
         </div>
         <div className="receta-texto">
@@ -46,3 +51,4 @@ export function Receta({ image, title, difficulty, timeCoock, ingredients, steps
     </div>
   );
 }
+
