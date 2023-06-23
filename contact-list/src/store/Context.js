@@ -1,17 +1,23 @@
-import React, { createContext, useContext, useState} from "react";
+import React, { createContext, useContext, useEffect, useState} from "react";
+import { getAgenda } from "../service/contact";
+import { AGENDA_URL, AGENDA_SLUG, CONTACT_URL } from './constants';
 
 const Context = createContext()
 
 export const ContextProvider = ({ children }) => {
 
-    const [counter, setCounter] = useState(0);
+    const [agenda, setAgenda] = useState([]);
 
-    const handleSum = () =>{
-        setCounter(counter + 1);
-    }
 
-    const store = {counter};
-    const actions = {handleSum};
+   useEffect(() =>{
+        getAgenda(AGENDA_URL, setAgenda);
+        
+   },[])
+
+   
+
+    const store = {agenda};
+    const actions = {};
 
     return(
         <Context.Provider value={{store, actions}}>
